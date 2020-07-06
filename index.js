@@ -1,5 +1,5 @@
 // Imports
-import getXmlHttpRequest from './getXmlHttpRequest';
+const getXmlHttpRequest = require('./getXmlHttpRequest');
 
 /**
  * Send Ajax-request (without jQuery)
@@ -21,7 +21,7 @@ import getXmlHttpRequest from './getXmlHttpRequest';
  *
  * @return {null|Object}
  *
- * @version 1.0.1
+ * @version 1.0.2
  * @author webenot@mail.ua
  */
 

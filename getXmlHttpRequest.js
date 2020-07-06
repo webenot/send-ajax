@@ -3,7 +3,7 @@
  *
  * @return {Object|null}
  *
- * @version 1.0.0
+ * @version 1.0.1
  * @author webenot@mail.ua
  */
 const getXmlHttpRequest = () => {
@@ -35,5 +35,7 @@ const getXmlHttpRequest = () => {
   }
   return result;
 };
+
+module.exports = getXmlHttpRequest;
 
 export default getXmlHttpRequest;
