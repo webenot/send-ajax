@@ -1,4 +1,8 @@
 # send-ajax
+
+[![npm version](https://img.shields.io/npm/v/send-ajax?color=yellow)](https://www.npmjs.com/package/send-ajax)
+[![licence](https://img.shields.io/npm/l/send-ajax)](https://github.com/axios/axios/blob/HEAD/LICENSE)
+
 Make ajax requests without jQuery
 
 ### Installation
