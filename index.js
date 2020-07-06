@@ -184,4 +184,6 @@ const sendAjax = ({
   return xhr;
 };
 
+module.exports = sendAjax;
+
 export default sendAjax;
