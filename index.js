@@ -21,7 +21,7 @@ import getXmlHttpRequest from './getXmlHttpRequest';
  *
  * @return {null|Object}
  *
- * @version 1.0.0
+ * @version 1.0.1
  * @author webenot@mail.ua
  */
 
