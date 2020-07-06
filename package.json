@@ -1,8 +1,11 @@
 {
   "name": "send-ajax",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Make ajax requests without jQuery",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "production": "cross-env NODE_ENV=production webpack -p --progress --display-error-details --display-entrypoints --display-reasons",
     "dev": "cross-env NODE_ENV=development webpack --debug --display-error-details --watch --progress --display-entrypoints --display-reasons",
