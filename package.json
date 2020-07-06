@@ -1,6 +1,6 @@
 {
   "name": "send-ajax",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Make ajax requests without jQuery",
   "main": "index.js",
   "publishConfig": {
@@ -19,7 +19,9 @@
     "http",
     "request",
     "xhr",
-    "ajax"
+    "ajax",
+    "XMLHttpRequest",
+    "jsonp"
   ],
   "author": "webenot@mail.ua",
   "license": "MIT",
