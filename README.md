@@ -8,7 +8,7 @@ $ npm i send-ajax
 
 Example with Promise:
 
-```
+```js
 import sendAjax from 'send-ajax';
 
 const postRequest;
@@ -45,7 +45,7 @@ const sendDataToServer = (url, data = {}) => {
 ```
 
 Abort request:
-```$xslt
+```js
 if (postRequest) {
   postRequest.abort();
 }
@@ -53,11 +53,11 @@ if (postRequest) {
 
 Example without Promise:
 
-```$xslt
+```js
 import sendAjax from 'send-ajax';
 
 const postData = (ajaxUrl, data, success, error, after) => {
-  postRequest = sendAjax({
+  return sendAjax({
     url: ajaxUrl,
     method: 'POST',
     data,
