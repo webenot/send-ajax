@@ -37,5 +37,3 @@ const getXmlHttpRequest = () => {
 };
 
 module.exports = getXmlHttpRequest;
-
-export default getXmlHttpRequest;

@@ -185,5 +185,3 @@ const sendAjax = ({
 };
 
 module.exports = sendAjax;
-
-export default sendAjax;
