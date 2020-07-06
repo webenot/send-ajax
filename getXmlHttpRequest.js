@@ -3,10 +3,12 @@
  *
  * @return {Object|null}
  *
- * @version 1.0.1
+ * @version 1.0.2
  * @author webenot@mail.ua
  */
 const getXmlHttpRequest = () => {
+  if (!window) return null;
+
   const isIE8 = !!window.XDomainRequest;
   const ActiveXObject = window.ActiveXObject || null;
   const XMLHttpRequest = window.XMLHttpRequest || null;
