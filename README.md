@@ -2,6 +2,10 @@
 
 [![npm version](https://img.shields.io/npm/v/send-ajax?color=yellow)](https://www.npmjs.com/package/send-ajax)
 [![licence](https://img.shields.io/npm/l/send-ajax)](https://github.com/axios/axios/blob/HEAD/LICENSE)
+[![licence](https://img.shields.io/github/issues/webenot/send-ajax)](https://github.com/webenot/send-ajax/issues)
+![licence](https://img.shields.io/bundlephobia/min/send-ajax)
+![licence](https://img.shields.io/github/last-commit/webenot/send-ajax)
+[![licence](https://img.shields.io/librariesio/dependents/npm/send-ajax)](https://www.npmjs.com/package/send-ajax)
 
 Make ajax requests without jQuery
 
