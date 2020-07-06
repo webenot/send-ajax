@@ -107,7 +107,7 @@ These are the available config options for making requests:
 
 **contentType** - sending content type. Default ```application/x-www-form-urlencoded```.
 
-**responseType** - type of response data. Default ```text```.
+**responseType** - type of response data. Default ```text```. Available values: ```json```, ```xml```, ```jsonp```. ```jsonp``` - for cross domain requests (only GET requests).
 
 **data** - sending data (for POST, PATCH or CREATE requests). Default ```{}```.
 
