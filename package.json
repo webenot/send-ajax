@@ -14,7 +14,9 @@
   },
   "keywords": [
     "http",
-    "request"
+    "request",
+    "xhr",
+    "ajax"
   ],
   "author": "webenot@mail.ua",
   "license": "MIT",
