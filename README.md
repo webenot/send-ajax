@@ -7,6 +7,7 @@
 ![licence](https://img.shields.io/github/last-commit/webenot/send-ajax)
 [![licence](https://img.shields.io/librariesio/dependents/npm/send-ajax)](https://www.npmjs.com/package/send-ajax)
 ![licence](https://img.shields.io/bundlephobia/min/send-ajax)
+![licence](https://img.shields.io/github/languages/top/webenot/send-ajax)
 
 Make ajax requests without jQuery
 
@@ -114,7 +115,7 @@ These are the available config options for making requests:
 
 **after** - function for execute after request send regardless of success response. Default ```null```.
 
-**contentType** - sending content type. Default ```application/x-www-form-urlencoded```.
+**contentType** - sending content type. Default ```application/x-www-form-urlencoded```. To send files use parameter ```contentType: 'multipart/form-data'```.
 
 **responseType** - type of response data. Default ```text```. Available values: ```json```, ```xml```, ```jsonp```. ```jsonp``` - for cross domain requests (only GET requests).
 
