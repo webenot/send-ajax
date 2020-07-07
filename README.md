@@ -127,7 +127,7 @@ These are the available config options for making requests:
 
 **success** - function for execute when request is success. Default ```null```.
 
-**error** - function for execute when request came with an error. Default ```null```.
+**error** - function for execute when error occurred. Default ```null```.
 
 **headers** - request headers array. Default ```[]```.
 
