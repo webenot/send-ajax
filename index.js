@@ -158,7 +158,7 @@ const sendAjax = ({
 
   xhr.responseType = responseType;
 
-  if (method.toLowerCase() === 'get') {
+  if (method.toLowerCase() === 'get' && params) {
     url += `?${params}`;
   }
 
