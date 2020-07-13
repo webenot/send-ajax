@@ -119,7 +119,7 @@ These are the available config options for making requests:
 
 **responseType** - type of response data. Default ```text```. Available values: ```json```, ```xml```, ```jsonp```. ```jsonp``` - for cross domain requests (only GET requests).
 
-**data** - sending data (for POST, PATCH or CREATE requests). Default ```{}```.
+**data** - sending data (for POST requests) or request parameters (for GET requests, where object format is ```{ paramName: paramValue }``` associate with url string like ```http://site.com?paramName=paramValue```). Default ```{}```.
 
 **async** - make request async. Default ```true```.
 
