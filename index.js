@@ -74,6 +74,7 @@ const sendAjax = ({
 
   // For cross domain requests on jsonp format (only GET requests)
   if (responseType.toLowerCase() === 'jsonp' && method.toLowerCase() === 'get') {
+    const aborted = { aborted: false };
     /**
      * Get JSONP data for cross-domain AJAX requests
      * @private
@@ -101,25 +102,32 @@ const sendAjax = ({
 
     // Function to run on success
     window[callback] = (callbackData) => {
-      if (success) {
+      if (success && !aborted.aborted) {
         success(callbackData);
       }
     };
 
     url += `?${params}`;
 
-    if (before) {
+    if (before && !aborted.aborted) {
       before(data);
     }
 
     // Run request
-    loadJSONP(url, callback);
+    if (!aborted.aborted) {
+      loadJSONP(url, callback);
+    }
 
-    if (after) {
+    if (after && !aborted.aborted) {
       after(data);
     }
 
-    return null;
+    return {
+      abort: () => {
+        aborted.aborted = true;
+        return null;
+      },
+    };
   }
 
   // Using XMLHttpRequest object
