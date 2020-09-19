@@ -90,10 +90,13 @@ const sendAjax = ({
       // Insert script tag into the DOM (append to <head>)
       document.body.appendChild(script);
 
-      script.onload.bind(this);
-      // After the script is loaded (and executed), remove it
+      // After the script is loaded (and executed) or if error, remove it
       script.onload = () => {
-        this.remove();
+        script.remove();
+      };
+
+      script.error = () => {
+        script.remove();
       };
     };
 
@@ -107,7 +110,7 @@ const sendAjax = ({
       }
     };
 
-    url += `?${params}`;
+    url += params.length ? `?${params}` : '';
 
     if (before && !aborted.aborted) {
       before(data);
