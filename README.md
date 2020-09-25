@@ -19,9 +19,9 @@ $ npm i send-ajax
 Example with Promise:
 
 ```js
-import sendAjax from 'send-ajax';
+import * as sendAjax from 'send-ajax';
 
-const postRequest;
+let postRequest = null;
 
 const postData = (ajaxUrl, data = {}) => {
   return new Promise((resolve, reject) => {
@@ -64,7 +64,7 @@ if (postRequest) {
 Example without Promise:
 
 ```js
-import sendAjax from 'send-ajax';
+import * as sendAjax from 'send-ajax';
 
 const postData = (ajaxUrl, data, success, error, after) => {
   return sendAjax({

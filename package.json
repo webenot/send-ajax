@@ -1,6 +1,6 @@
 {
   "name": "send-ajax",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Make ajax requests without jQuery",
   "main": "index.js",
   "publishConfig": {
